@@ -1,5 +1,21 @@
 # Django REST Swagger
 
+How to Make New Release (D2D Version)
+-------------------------------------
+Update version in `rest_framework_swagger/__init__.py` by changing the last number to be one greater. Example, change
+
+```__version__ = "v2.2.0+d2d.001"```
+
+to
+
+```__version__ = "v2.2.0+d2d.002"```
+
+Commit and push changes, then go to https://github.com/Draft2Digital/django-rest-swagger/releases and click Draft a new release.
+
+Click Choose a tag and put in the same version as is the value in the `__version__` variable (e.g. `v2.2.0+d2d.004`). Publish the release.
+
+In projects that use this, update the version pointed at to be the new version.
+
 [![build-status-badge]][build-status]
 [![codecov](https://codecov.io/gh/marcgibbons/django-rest-swagger/branch/master/graph/badge.svg)](https://codecov.io/gh/marcgibbons/django-rest-swagger)
 [![pypi-version]][pypi]
